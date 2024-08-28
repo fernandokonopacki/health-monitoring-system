@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 60000
+    renewal-threshold-update-interval-ms: 60000
+
+spring:
+  application:
+    name: hms-eureka-server
